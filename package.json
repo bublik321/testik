@@ -5,8 +5,9 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next",
-    "start": "next start"
+    "dev": "next dev",
+    "start": "next start",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@vercel/og": "^0.5.0",
@@ -19,12 +20,15 @@
     "react-dom": "^18.2.0",
     "sharp": "^0.32.6"
   },
+  "packageManager": "yarn@1.22.19",
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.23",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.33",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "turbo": "^2.0.4",
+    "typescript": "5.5.2"
   }
 }
