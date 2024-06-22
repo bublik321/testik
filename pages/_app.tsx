@@ -1,7 +1,13 @@
-import type { AppProps } from 'next/app'
-import type { ReactElement } from 'react'
-import '../style.css'
+import type { AppProps } from "next/app";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { ReactElement } from "react";
+import "../style.css";
 
 export default function App({ Component, pageProps }: AppProps): ReactElement {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <SpeedInsights />
+      <Component {...pageProps} />
+    </>
+  );
 }
